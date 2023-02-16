@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --principal: #FAF9F9,
+    --secundario: #5261AC,
+    --tercero: #DEE2FF,
+    --cuarto: #EFD3D7,
+    --quinto: #CBC0D3,
+    --sexto: #8E9AAF,
+    --septimo: #2B2D42
+}
+
+.container {
+    background-color: var(--principal);
+}
+
+@import "menu"
