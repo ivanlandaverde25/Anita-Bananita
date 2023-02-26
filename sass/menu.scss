@@ -1,0 +1,48 @@
+// Estilos de menú
+
+.navbar-menu{
+    background-color: var( --quinto );
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 50px 10px 50px;
+    justify-content: space-between;
+    align-content: center;
+    height: 10vh;
+
+    &-logo{
+        width: 70px;
+    }
+
+    &-list{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    
+        & a{
+            text-decoration: none;
+            color: var( --secundario );
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        &-option{
+            display: flex;
+            flex-flow: row nowrap;
+            list-style: none;
+
+            &-item{
+                padding: 15px 40px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                transition: .2s ease;
+
+                &:hover{
+                    background-color: var(--principal);
+                }
+            }
+        }
+    }
+}

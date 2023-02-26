@@ -5,18 +5,25 @@
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 :root {
-    --principal: #FAF9F9,
-    --secundario: #5261AC,
-    --tercero: #DEE2FF,
-    --cuarto: #EFD3D7,
-    --quinto: #CBC0D3,
-    --sexto: #8E9AAF,
-    --septimo: #2B2D42
+    --principal: #FAF9F9;
+    --secundario: #5261AC;
+    --tercero: #DEE2FF;
+    --cuarto: #EFD3D7;
+    --quinto: #CBC0D3;
+    --sexto: #8E9AAF;
+    --septimo: #2B2D42;
 }
 
 .container {
     background-color: var(--principal);
+    max-width: 1980px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-@import "menu"
+@import "menu";

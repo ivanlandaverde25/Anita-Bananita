@@ -1,17 +1,70 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 22 | @import "menu"
- *    |         ^^^^^^
- *    '
- *   sass\index.scss 22:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 22 \2502  @import \"menu\"\a    \2502          ^^^^^^\a    \2575 \a   sass\\index.scss 22:9  root stylesheet";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --principal: #FAF9F9;
+  --secundario: #5261AC;
+  --tercero: #DEE2FF;
+  --cuarto: #EFD3D7;
+  --quinto: #CBC0D3;
+  --sexto: #8E9AAF;
+  --septimo: #2B2D42;
+}
+
+.container {
+  background-color: var(--principal);
+  max-width: 1980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navbar-menu {
+  background-color: var(--quinto);
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 50px 10px 50px;
+  justify-content: space-between;
+  align-content: center;
+  height: 10vh;
+}
+.navbar-menu-logo {
+  width: 70px;
+}
+.navbar-menu-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.navbar-menu-list a {
+  text-decoration: none;
+  color: var(--secundario);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.navbar-menu-list-option {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+.navbar-menu-list-option-item {
+  padding: 15px 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+.navbar-menu-list-option-item:hover {
+  background-color: var(--principal);
+}
+
+/*# sourceMappingURL=style.css.map */
