@@ -67,4 +67,39 @@ body {
   background-color: var(--principal);
 }
 
+.hero {
+  background-color: var(--principal);
+  display: grid;
+  grid-template: "hero-image hero-information" 90vh/50% 50%;
+}
+.hero-image {
+  grid-area: "hero-image";
+  min-height: auto;
+}
+.hero-image-principal {
+  width: 100%;
+}
+.hero-information {
+  grid-area: "hero-information";
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero-information-image {
+  min-width: 550px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.hero-information-info {
+  border: 2px solid green;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  height: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

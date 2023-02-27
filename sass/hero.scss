@@ -1,0 +1,41 @@
+.hero{
+    background-color: var( --principal );
+    display: grid;
+    grid-template:
+    "hero-image hero-information" 90vh/
+    50%         50%;
+    
+    &-image{
+        grid-area: "hero-image";
+        min-height: auto;
+
+        &-principal{
+            width: 100%;
+        }
+    }
+    
+    &-information{
+        grid-area: "hero-information";
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        &-image{
+            min-width: 550px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        
+        &-info{
+            border: 2px solid green;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            height: auto;
+        }
+    }
+}
